@@ -34,6 +34,9 @@ int main()
         case '/':
             div(a,b);
             break;
+        default:
+            printf("Invalid operation");
+            break;
     }
     return 0;
 }
