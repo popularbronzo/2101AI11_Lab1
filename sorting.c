@@ -190,6 +190,9 @@ int main()
             quickSort(A,0,n-1);
              printArray(A, n);
              break;
+        default:
+            printf("Invalid operation");
+            break;
     };
     
     return 0;
