@@ -9,6 +9,9 @@ void sub(int a,int b){
 void multi(int a,int b){
     printf("Product of %d and %d=%d",a,b,a*b);
 }
+void div(float a,float b){
+    printf("Division of %f by %f=%f",a,b,a/b);
+}
 
 int main()
 {
@@ -27,6 +30,9 @@ int main()
             break;
         case '*':
             multi(a,b);
+            break;
+        case '/':
+            div(a,b);
             break;
     }
     return 0;
