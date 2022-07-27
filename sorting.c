@@ -24,7 +24,21 @@ void insertionSort(int *A, int n){
     }
 }
 
-
+void selection_sort(int *A,int n){
+    int index,temp;
+    printf("Running selection sort..\n");
+    for(int i=0;i<n-1;i++){
+        index=i;
+        for(int j=i+1;j<n;j++){
+            if(A[j]<A[index]){
+                index=j;
+        }
+    }
+    temp=A[i];
+    A[i]=A[index];
+    A[index]=temp;
+}
+}
 
 int main()
 {
@@ -47,6 +61,10 @@ int main()
             insertionSort(A, n);
             printArray(A, n);
             break;
+        case 2:
+             selection_sort(A,n);
+             printArray(A, n);
+             break;
         
         
 
