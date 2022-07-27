@@ -6,6 +6,9 @@ void add(int a,int b){
 void sub(int a,int b){
     printf("subtraction of %d and %d=%d",a,b,a-b);
 }
+void multi(int a,int b){
+    printf("Product of %d and %d=%d",a,b,a*b);
+}
 
 int main()
 {
@@ -21,6 +24,9 @@ int main()
             break;
         case '-':
             sub(a,b);
+            break;
+        case '*':
+            multi(a,b);
             break;
     }
     return 0;
